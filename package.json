@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "حلواني السفير - نظام نقاط البيع",
   "scripts": {
-    "build": "npm --prefix frontend ci && npm --prefix frontend run build && npm --prefix backend ci",
+    "build": "npm --prefix frontend ci --include=dev && npm --prefix frontend run build && npm --prefix backend ci --omit=dev",
     "start": "npm --prefix backend start"
   },
   "engines": {
